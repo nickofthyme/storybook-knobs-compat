@@ -1,4 +1,6 @@
-export interface Result {
-  divs: DOMRect[];
-  styled: DOMRect[];
+export interface KnobsParameters {
+  syncToUrl?: boolean;
+  clearParamsBetweenStories?: boolean;
 }
+
+export type * from './types';

@@ -1,35 +1,10 @@
-<!-- README START -->
+# Storybook Addon Knobs Compat
 
-# Storybook Addon Kit ([demo](https://main--601ada52c3d4040021afdc30.chromatic.com))
+Compatibility Knobs designed to work as original but using the new controls storybook UI.
 
-Simplify the creation of Storybook addons
+At the moment, storybook does not allow directly updating `argTypes` in a way that would allow this addon to dynamically update the `args`.
 
-- 📝 Live-editing in development
-- ⚛️ React/JSX support
-- 📦 Transpiling and bundling with [tsup](https://tsup.egoist.dev/)
-- 🏷 Plugin metadata
-- 🚢 Release management with [Auto](https://github.com/intuit/auto)
-- 🧺 Boilerplate and sample code
-- 🛄 ESM support
-- 🛂 TypeScript by default with option to eject to JS
-
-### Migrating to a later Storybook version
-
-If you have an existing addon that you want to migrate to support the latest version of Storyboook, you can check out the [addon migration guide](https://storybook.js.org/docs/addons/addon-migration-guide).
-
-## Getting Started
-
-Click the **Use this template** button to get started.
-
-![](https://user-images.githubusercontent.com/321738/125058439-8d9ef880-e0aa-11eb-9211-e6d7be812959.gif)
-
-Clone your repository and install dependencies.
-
-```sh
-npm install
-```
-
-<!-- README END -->
+Instead, we just track the knobs in a separate state. We read url params just the same and the deprecated `storybook-addon-knobs`, so we can read as wright them the same.
 
 ### Development scripts
 
@@ -110,7 +85,7 @@ To get started, replace this README with the content in this sample template.
 First, install the package.
 
 ```sh
-npm install --save-dev my-addon
+npm install --save-dev storybook-addon-knobs-compat
 ```
 
 Then, register it as an addon in `.storybook/main.js`.
@@ -125,7 +100,7 @@ const config: StorybookConfig = {
   // ...rest of config
   addons: [
     '@storybook/addon-docs'
-    'my-addon', // 👈 register the addon here
+    'storybook-addon-knobs-compat', // 👈 register the addon here
   ],
 };
 
@@ -190,9 +165,9 @@ const config: StorybookConfig = {
   addons: [
     "@storybook/addon-docs",
     {
-      name: "my-addon",
+      name: "storybook-addon-knobs-compat",
       options: {
-        // 👈 options for my-addon go here
+        // 👈 options for storybook-addon-knobs-compat go here
       },
     },
   ],

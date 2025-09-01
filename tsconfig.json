@@ -15,9 +15,15 @@
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
     "noImplicitAny": true,
-    "lib": ["es2023", "dom", "dom.iterable"],
+    "lib": [
+      "es2023",
+      "dom",
+      "dom.iterable"
+    ],
     "baseUrl": ".",
     "rootDir": "./src"
   },
-  "include": ["src/**/*"]
+  "include": [
+    "./src/**/*"
+  ]
 }
