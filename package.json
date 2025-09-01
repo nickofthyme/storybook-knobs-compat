@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-knobs-compat",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Flexible story control paramaterization",
   "keywords": [
     "controls",
