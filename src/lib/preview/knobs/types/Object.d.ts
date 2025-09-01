@@ -1,6 +1,6 @@
 import React, { ChangeEvent, Component } from 'react';
 
-import { KnobControlConfig, KnobControlProps } from './types';
+import { KnobControlConfig, KnobControlProps } from './common';
 export declare type ObjectTypeKnob<T> = KnobControlConfig<T>;
 declare type ObjectTypeProps<T> = KnobControlProps<T>;
 interface ObjectTypeState<T> {

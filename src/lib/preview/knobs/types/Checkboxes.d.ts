@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { KnobControlConfig, KnobControlProps } from './types';
+import { KnobControlConfig, KnobControlProps } from './common';
 declare type CheckboxesTypeKnobValue = string[];
 export interface CheckboxesTypeKnob extends KnobControlConfig<CheckboxesTypeKnobValue> {
   options: Record<string, string>;

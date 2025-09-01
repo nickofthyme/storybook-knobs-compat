@@ -1,6 +1,6 @@
 import React, { ChangeEvent, Component } from 'react';
 
-import { KnobControlConfig, KnobControlProps } from './types';
+import { KnobControlConfig, KnobControlProps } from './common';
 export declare type ArrayTypeKnobValue = string[] | readonly string[];
 export interface ArrayTypeKnob extends KnobControlConfig<ArrayTypeKnobValue> {
   separator: string;

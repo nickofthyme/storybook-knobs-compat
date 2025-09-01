@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { KnobControlConfig, KnobControlProps } from './types';
+import { KnobControlConfig, KnobControlProps } from './common';
 export declare type RadiosTypeKnobValue = string | number | null | undefined;
 export declare type RadiosTypeOptionsProp<T extends RadiosTypeKnobValue> = Record<string | number, T>;
 export interface RadiosTypeKnob extends KnobControlConfig<RadiosTypeKnobValue> {

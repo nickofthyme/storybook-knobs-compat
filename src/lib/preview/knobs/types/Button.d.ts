@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react';
 
-import { KnobControlConfig, KnobControlProps } from './types';
+import { KnobControlConfig, KnobControlProps } from './common';
 export declare type ButtonTypeKnob = KnobControlConfig<never>;
 export interface ButtonTypeProps extends KnobControlProps<never> {
   knob: ButtonTypeKnob;

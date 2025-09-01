@@ -1,4 +1,15 @@
-import { ArrayTypeKnob, BooleanTypeKnob, ButtonTypeOnClickProp, ColorTypeKnob, DateTypeKnob, FileTypeKnob, KnobType, NumberTypeKnob, ObjectTypeKnob, OptionsTypeKnob, RadiosTypeKnob, SelectTypeKnob, TextTypeKnob } from './types';
+import type { ArrayTypeKnob } from './Array';
+import type { BooleanTypeKnob } from './Boolean';
+import type { ButtonTypeOnClickProp } from './Button';
+import type { ColorTypeKnob } from './Color';
+import type { DateTypeKnob } from './Date';
+import type { FileTypeKnob } from './Files';
+import type { NumberTypeKnob } from './Number';
+import type { ObjectTypeKnob } from './Object';
+import type { OptionsTypeKnob } from './Options';
+import type { RadiosTypeKnob } from './Radio';
+import type { SelectTypeKnob } from './Select';
+import type { TextTypeKnob } from './Text';
 
 export type Mutable<T> = {
   -readonly [P in keyof T]: T[P] extends readonly (infer U)[] ? U[] : T[P];

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { KnobControlConfig, KnobControlProps } from './types';
+import { KnobControlConfig, KnobControlProps } from './common';
 declare type NumberTypeKnobValue = number;
 export interface NumberTypeKnobOptions {
   range?: boolean;

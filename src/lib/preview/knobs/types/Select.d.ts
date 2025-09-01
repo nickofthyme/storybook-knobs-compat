@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react';
 
-import { KnobControlConfig, KnobControlProps } from './types';
+import { KnobControlConfig, KnobControlProps } from './common';
 export declare type SelectTypeKnobValue = string | number | boolean | null | undefined | PropertyKey[];
 export declare type SelectTypeOptionsProp<T extends SelectTypeKnobValue = SelectTypeKnobValue> = Record<PropertyKey, T> | Record<Extract<T, PropertyKey>, T[keyof T]> | T[] | readonly T[];
 export interface SelectTypeKnob<T extends SelectTypeKnobValue = SelectTypeKnobValue> extends KnobControlConfig<T> {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { KnobControlConfig, KnobControlProps } from './types';
+import { KnobControlConfig, KnobControlProps } from './common';
 declare type TextTypeKnobValue = string;
 export declare type TextTypeKnob = KnobControlConfig<TextTypeKnobValue> & {
   value?: TextTypeKnobValue;

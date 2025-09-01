@@ -1,5 +1,3 @@
-import { ComponentType } from 'react';
-
 import ArrayType from './Array';
 import ColorType from './Color';
 import DateType from './Date';
@@ -37,12 +35,8 @@ const KnobControls: {
   };
 };
 export default KnobControls;
-export type KnobType = keyof typeof KnobControls;
-export type KnobControlType = ComponentType<any> & {
-  serialize: (v: any) => any;
-  deserialize: (v: any) => any;
-};
-export const getKnobControl: (type: KnobType) => KnobControlType;
+
+export type * from './common';
 export type { TextTypeKnob } from './Text';
 export type { NumberTypeKnob, NumberTypeKnobOptions } from './Number';
 export type { ColorTypeKnob } from './Color';

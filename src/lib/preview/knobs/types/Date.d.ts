@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { KnobControlConfig, KnobControlProps } from './types';
+import { KnobControlConfig, KnobControlProps } from './common';
 declare type DateTypeKnobValue = number;
 export declare type DateTypeKnob = KnobControlConfig<DateTypeKnobValue>;
 declare type DateTypeProps = KnobControlProps<DateTypeKnobValue>;

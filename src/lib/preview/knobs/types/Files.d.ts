@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react';
 
-import { KnobControlConfig, KnobControlProps } from './types';
+import { KnobControlConfig, KnobControlProps } from './common';
 declare type DateTypeKnobValue = string[];
 export interface FileTypeKnob extends KnobControlConfig<DateTypeKnobValue> {
   accept: string;

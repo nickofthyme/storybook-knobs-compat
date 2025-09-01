@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react';
 
-import { KnobControlConfig, KnobControlProps } from './types';
+import { KnobControlConfig, KnobControlProps } from './common';
 declare type BooleanTypeKnobValue = boolean;
 export declare type BooleanTypeKnob = KnobControlConfig<BooleanTypeKnobValue>;
 export interface BooleanTypeProps extends KnobControlProps<BooleanTypeKnobValue> {

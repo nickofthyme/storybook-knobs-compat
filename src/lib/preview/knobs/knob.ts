@@ -10,7 +10,7 @@ import { radios } from './radios';
 import { select } from './select';
 import { text } from './text';
 import type { KnobType } from './types';
-import type { Knob, Mutable } from './types/type-defs.';
+import type { Knob, Mutable } from './types/type-defs';
 
 export const knob = <T extends KnobType, V = Mutable<Knob<T>['value']>>(name: string, options: Knob<T>): V => {
   switch (options.type) {
@@ -25,17 +25,17 @@ export const knob = <T extends KnobType, V = Mutable<Knob<T>['value']>>(name: st
     case 'object':
       return object(name, options.value, options.groupId) as V;
     case 'select':
-      return select(name, options.value, options.groupId) as V;
+      return select(name, options.options, options.value, options.groupId) as V;
     case 'radios':
-      return radios(name, options.value, options.groupId) as V;
+      return radios(name, options.options, options.value, options.groupId) as V;
     case 'array':
-      return array(name, options.value, options.groupId) as V;
+      return array(name, options.value, options.separator, options.groupId) as V;
     case 'date':
-      return date(name, options.value, options.groupId) as V;
+      return date(name, new Date(options.value), options.groupId) as V;
     case 'files':
-      return files(name, options.value, options.value, options.groupId) as V;
+      return files(name, options.accept, options.value, options.groupId) as V;
     case 'options':
-      return optionsKnob(name, options.value, options.groupId) as V;
+      return optionsKnob(name, options.options, options.value, options.optionsObj, options.groupId) as V;
     default:
       throw new Error(`Unknown knob type: ${options.type}`);
   }

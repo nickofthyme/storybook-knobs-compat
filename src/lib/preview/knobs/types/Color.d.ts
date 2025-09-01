@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { KnobControlConfig, KnobControlProps } from './types';
+import { KnobControlConfig, KnobControlProps } from './common';
 declare type ColorTypeKnobValue = string;
 export declare type ColorTypeKnob = KnobControlConfig<ColorTypeKnobValue>;
 declare type ColorTypeProps = KnobControlProps<ColorTypeKnobValue>;
