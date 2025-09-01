@@ -1,8 +1,9 @@
 import { PureArgsTable as ArgsTable } from '@storybook/addon-docs/blocks';
 import { dequal as deepEqual } from 'dequal';
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React from 'react';
 import { AddonPanel } from 'storybook/internal/components';
 import { addons, type API, useGlobals, useStorybookState } from 'storybook/internal/manager-api';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'storybook/internal/preview-api';
 import { styled } from 'storybook/internal/theming';
 import type { Args, ArgTypes } from 'storybook/internal/types';
 

@@ -1,6 +1,7 @@
-import React, { createContext, type PropsWithChildren, useCallback, useContext, useEffect, useMemo, useReducer, useRef } from 'react';
+import React, { createContext, type PropsWithChildren, useContext } from 'react';
 import events from 'storybook/internal/core-events';
 import { addons, type API } from 'storybook/internal/manager-api';
+import { useCallback, useEffect, useMemo, useReducer, useRef } from 'storybook/internal/preview-api';
 import type { InputType } from 'storybook/internal/types';
 
 import { Events } from '../../../constants';
@@ -78,6 +79,7 @@ const knobsReducer = (state: KnobsPanelState, action: Actions): KnobsPanelState 
         };
       }
 
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       if ((action.payload.options?.control as any).button) {
         return {
           ...state,
