@@ -1,3 +1,15 @@
+# v0.0.2 (Mon Sep 01 2025)
+
+#### ⚠️ Pushed to `main`
+
+- chore: try to fix hooks issue ([@nickofthyme](https://github.com/nickofthyme))
+
+#### Authors: 1
+
+- Nick Partridge ([@nickofthyme](https://github.com/nickofthyme))
+
+---
+
 # v0.0.1 (Mon Sep 01 2025)
 
 #### ⚠️ Pushed to `main`
